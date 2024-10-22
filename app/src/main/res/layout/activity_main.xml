@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageViewMyChoice"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/rock"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/textViewMyChoice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="A te választásod"
+        android:textAlignment="center"
+        android:textSize="35sp"
+        android:layout_gravity="center"/>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/imageViewPcChoice"
+        android:src="@drawable/rock"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/textViewPcChoice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="A gép választásod"
+        android:textAlignment="center"
+        android:textSize="35sp"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textViewResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Eredmény: Ember: "
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/textViewYourPoints"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/textViewComputer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Computer: "
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/textViewPcPoints"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="25sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonRock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kő"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/buttonPaper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Papír"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/buttonScissors"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Olló"
+            android:textSize="25sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
